@@ -1,38 +1,103 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+:root 
+{
+  --mainPink:aquamarine;
+  --mainYellow:rgb(240,228,148);
+  --mainWhite:#fff;
+  --mainBlack:#000;
+  --yellowTrans:rgba(249,228,148,0.5);
+  --mainGrey:rgb(238,238,238);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body
+{
+  font-family: "Kaushan Script", cursive;
+  background: var(--mainWhite);
+  color:var(--mainBlack) 
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* nav links */
+.navbar-toggler
+{
+  outline:none !important;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.toggler-icon
+{
+  font-size: 2rem;
+  color: var(--mainPink) !important;
+}
+.nav-link
+{
+  color:var(--mainPink) !important;
+  font-size: 1.5rem;
+  padding-right: 30px !important;
+  transition: all 1s ease-in-out;
+  
+}
+.nav-link:hover{
+  color: var(--mainBlack) !important ;
 }
 
-.App-link {
-  color: #61dafb;
+/* CART */
+.cart-info__icon
+{
+  color: var(--mainBlack);
+  cursor: pointer;
+}
+.cart-info
+{
+  border: 0.1rem solid var(--mainBlack); 
+  color: var(--mainBlack);
+  border-radius: 0.25rem;
+  padding: 0.4rem 0.6rem; 
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.cart-info:hover
+{
+  background: var(--mainPink);
+  border-color:var(--mainPink);
+  color: var(--mainWhite) ;
 }
+.cart-info:hover .cart-info__icon
+{
+  color: var(--mainWhite);
+}
+
+/* Banner */
+.max-height
+{
+  min-height:calc(100vh - 76px);
+  background: linear-gradient(var(--yellowTrans), var(--yellowTrans)), url('../src/components/img/cake_1.jpeg');
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.banner
+{
+  color: var(--mainWhite);
+  margin-top: -4rem;
+}
+.banner-title
+{
+  color: var(--mainWhite);
+  font-size: 4rem;
+}
+.banner-link
+{
+  font-size: 1.5rem;
+  color: var(--mainBlack);
+  border: 0.2rem var(--mainBlack) solid;
+}
+.banner-link:hover
+{
+  background: var(--mainBlack);
+  color: var(--mainPink);
+}
+
+/* About  us */
