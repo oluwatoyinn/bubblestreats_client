@@ -16,6 +16,27 @@ body
   background: var(--mainWhite);
   color:var(--mainBlack) 
 }
+/* styles */
+.btn-pink
+{
+  color: var(--mainPink);
+  border-color:var(--mainPink) ;
+}
+.btn-black
+{
+  color: var(--mainBlack);
+  border-color:var(--mainBlack) ;
+}
+.btn-black:hover
+{
+  color: var(--mainPink);
+  background:var(--mainBlack) ;
+}
+.btn-pink:hover
+{
+  color: var(--mainBlack);
+  background:var(--mainPink);
+}
 
 /* nav links */
 .navbar-toggler
@@ -85,7 +106,7 @@ body
 }
 .banner-title
 {
-  color: var(--mainWhite);
+  color: var(--mainPink);
   font-size: 4rem;
 }
 .banner-link
@@ -101,3 +122,25 @@ body
 }
 
 /* About  us */
+.about-image-container
+{
+  position: relative;
+}
+.about-image-container::before
+{
+  content: '';
+  position: absolute;
+  top: -1.5rem;
+  left: -1.7rem;
+  width: 100%;
+  height: 100%;
+  outline: 0.5rem solid var(--mainYellow);
+  z-index: -1;
+  transition: all 1s linear;
+}
+.about-image-container:hover::before
+{
+  top: 0;
+  left: 0;
+}
+#about p{font-size: 1.4rem;}
