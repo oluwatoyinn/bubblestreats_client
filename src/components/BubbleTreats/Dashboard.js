@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import Navbar from './Navbar'
 import Banner from './Banner'
 import AboutUs from './AboutUs'
+import { Bubblestore } from './BubbleStore'
 
 export default class Dashboard extends Component {
 
@@ -11,6 +12,7 @@ export default class Dashboard extends Component {
                 <Navbar />
                 <Banner />
                 <AboutUs />
+                <Bubblestore />
             </React.Fragment>
         )
     }

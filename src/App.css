@@ -144,3 +144,56 @@ body
   left: 0;
 }
 #about p{font-size: 1.4rem;}
+
+/* store */
+#store
+{
+  background: var(--mainGrey);
+}
+.search-box
+{
+  background: var(--mainPink);
+  color: var(--mainBlack);
+}
+
+.single-item
+{
+  transition: all 0.3s linear ;
+}
+.single-item:hover
+{
+  box-shadow: 0 10px 15px rgba(0,0,0);
+}
+.img-container
+{
+  /* because cart-icon will be position absolute, this will serve as parent container */
+  position: relative; 
+  overflow: hidden;
+  cursor: pointer;
+}
+.store-image
+{
+  transition: all 1s ease-in-out;
+}
+.img-container:hover .store-image
+{
+  /* number less than 1 will minimize the image */
+  transform: scale(1.2);
+}
+.store_icon 
+{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 0.75rem;
+  background: var(--mainYellow); 
+  border-top-left-radius: 1rem;
+  transition: all 1s ease-in-out;
+  transform: translate(100%,100%);
+}
+.img-container:hover .store_icon
+{
+  transform: translate(0,0);
+}
+.store_icon:hover
+{color: var(--mainWhite);}
