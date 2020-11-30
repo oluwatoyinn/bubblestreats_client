@@ -3,6 +3,8 @@ import Navbar from './Navbar'
 import Banner from './Banner'
 import AboutUs from './AboutUs'
 import { Bubblestore } from './BubbleStore'
+import Services from './Services'
+import { Cakes } from './Cakes'
 
 export default class Dashboard extends Component {
 
@@ -13,6 +15,8 @@ export default class Dashboard extends Component {
                 <Banner />
                 <AboutUs />
                 <Bubblestore />
+                <Services />
+                {/* <Cakes /> */}
             </React.Fragment>
         )
     }

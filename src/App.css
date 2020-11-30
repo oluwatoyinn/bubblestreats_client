@@ -39,6 +39,11 @@ body
 }
 
 /* nav links */
+.navbar-brand
+{
+  font-size: 2.5rem;
+  font-weight: 600;
+}
 .navbar-toggler
 {
   outline:none !important;
@@ -143,7 +148,11 @@ body
   top: 0;
   left: 0;
 }
-#about p{font-size: 1.4rem;}
+#about p{
+  font-size: 1.4rem;
+  word-spacing: 0.5rem; 
+  /* letter-spacing: 0.1rem; */
+}
 
 /* store */
 #store
@@ -197,3 +206,19 @@ body
 }
 .store_icon:hover
 {color: var(--mainWhite);}
+
+/* services */
+.service-image{width: 65px;}
+.services
+{
+  color: var(--mainWhite);
+  background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url("../src/components/img/services/services-bg.jpeg") center/cover fixed no-repeat;
+}
+.service-title
+{
+  letter-spacing: 0.5rem;
+}
+.service-text
+{
+   word-spacing: 0.5rem;
+}
